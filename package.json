@@ -1,0 +1,16 @@
+{
+  "name": "Todo-list",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "serve": "http-server -c-1 ./src -p 3000"
+  },
+  "devDependencies": {
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8"
+  }
+}
