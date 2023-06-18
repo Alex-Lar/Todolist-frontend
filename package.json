@@ -4,6 +4,7 @@
   "main": "./src/index.js",
   "license": "MIT",
   "scripts": {
+    "start": "yarn run prettier-format && yarn run lint && yarn run serve",
     "lint": "eslint .",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
     "serve": "http-server -c-1 ./src -p 3000"

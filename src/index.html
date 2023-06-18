@@ -1,18 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>ToDo List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/5d73d7886d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./public/css/reset.css" rel="stylesheet" />
+    <link href="./public/css/styles.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <title>ToDo List</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./public/css/styles.css" rel="stylesheet">
-</head>
+  <body>
+    <section class="todoapp">
+      <header class="header">
+        <div class="title-wrapper">
+          <h1 class="title">to do list</h1>
+          <p class="text">Stop Procrastinating Today!</p>
+        </div>
 
-<body>
+        <div class="avatar-wrapper">
+          <img
+            class="avatar"
+            src="./public/img/avatar.png"
+            alt="user avatar image"
+          />
+        </div>
+      </header>
 
-  <h1>Hello World</h1>
+      <section class="main">
+        <header class="header">
+          <div class="button-wrapper">
+            <button title="Clear completed" class="clear-completed active">
+              <i class="fa-solid fa-eye-slash"></i>
+              Clear completed
+            </button>
+
+            <!-- Popover Element -->
+            <button title="Filters" class="filters-button active">
+              <i class="fa-solid fa-filter"></i>
+            </button>
+
+            <ul class="filters-list">
+              <li>
+                <button class="active">All</button>
+              </li>
+              <li>
+                <button>Active</button>
+              </li>
+              <li>
+                <button>Completed</button>
+              </li>
+            </ul>
+          </div>
+
+          <span class="counter">3 items left</span>
+        </header>
+
+        <ul class="todos"></ul>
+
+        <!-- <input type="text" class="new-todo" /> -->
+      </section>
+    </section>
 
     <script type="module" src="./index.js"></script>
-</body>
-
+  </body>
 </html>
