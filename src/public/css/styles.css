@@ -21,6 +21,7 @@
   --white-1: #f4f6fa;
   --white-2: #f4f6fa93;
   --white-3: #f4f6fa71;
+  --white-4: #f4f6fa44;
   --gray-1: #30343b;
   --gray-2: #2b2f35;
   --blue-1: #039bdc;
@@ -40,8 +41,8 @@ body {
   padding: 4.5rem 2.3rem 0;
 }
 
-i {
-  font-size: 1.1rem;
+button i {
+  font-size: 1.2rem;
 }
 
 button {
@@ -212,14 +213,18 @@ button.active:active {
   flex-direction: row;
   align-items: center;
   gap: 0.8rem;
+
+  padding: 1.2rem;
+  width: fit-content;
+
   font-size: 1.3rem;
   line-height: 1.5;
   color: var(--white-1);
   cursor: pointer;
-  padding: 1.2rem;
+  position: relative;
 }
 
-.todo-list li label:hover {
+.todo-list li:hover {
   background-color: var(--gray-2);
   border-radius: 0.5rem;
 }
@@ -314,6 +319,35 @@ button.active:active {
 
 .destroy {
   display: none;
+  padding: 0.4rem 0.6rem;
+  color: var(--white-4);
+  /* background-color: var(--black-1); */
+  transition: all var(--transition-1);
+}
+
+.todo-list li:hover .destroy {
+  display: flex;
+  align-items: center;
+
+  position: absolute;
+  top: 50%;
+  right: -3rem;
+
+  transform: translateY(-50%);
+}
+
+.destroy i {
+  font-size: 1.3rem;
+}
+
+.destroy:hover {
+  color: #ff7383b7;
+  background-color: #393c44;
+}
+
+.destroy:active {
+  color: #ff7383b7;
+  background-color: #393c44b4;
 }
 
 .edit {
