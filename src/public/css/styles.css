@@ -21,7 +21,7 @@
   --white-1: #f4f6fa;
   --white-2: #f4f6fa93;
   --white-3: #f4f6fa71;
-  --white-4: #f4f6fa44;
+  --white-4: #f4f6fa18;
   --gray-1: #30343b;
   --gray-2: #2b2f35;
   --blue-1: #039bdc;
@@ -317,41 +317,59 @@ button.active:active {
   text-decoration: line-through;
 }
 
-.destroy {
+.destroy i {
+  font-size: 1.4rem;
+  line-height: 0;
+}
+
+.edit i {
+  font-size: 1.1rem;
+  line-height: 0;
+}
+
+.destroy,
+.edit {
   display: none;
-  padding: 0.4rem 0.6rem;
+  padding: unset;
+  width: 2.5rem;
+  height: 2.5rem;
   color: var(--white-4);
-  /* background-color: var(--black-1); */
   transition: all var(--transition-1);
 }
 
-.todo-list li:hover .destroy {
+.todo-list li:hover .destroy,
+.todo-list li:hover .edit {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   position: absolute;
   top: 50%;
-  right: -3rem;
 
   transform: translateY(-50%);
 }
 
-.destroy i {
-  font-size: 1.3rem;
+.todo-list li:hover .destroy {
+  right: -6rem;
+}
+
+.todo-list li:hover .edit {
+  right: -3rem;
 }
 
 .destroy:hover {
   color: #ff7383b7;
-  background-color: #393c44;
+  background-color: unset;
 }
 
-.destroy:active {
-  color: #ff7383b7;
+.edit:hover {
+  color: #a073ffb7;
+  background-color: unset;
+}
+
+.destroy:active,
+.edit:active {
   background-color: #393c44b4;
-}
-
-.edit {
-  display: none;
 }
 
 /* Media */
