@@ -1,169 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>ToDo List</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./public/css/reset.css" rel="stylesheet" />
+    <link href="./public/css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/5d73d7886d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <title>ToDo List</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="./public/css/reset.css" rel="stylesheet" />
-  <link href="./public/css/styles.css" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/5d73d7886d.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <section class="todoapp">
-    <header class="header">
-      <div class="title-wrapper">
-        <h1 class="title">to do list</h1>
-        <p class="text">Stop Procrastinating Today!</p>
-      </div>
-
-      <div class="avatar-wrapper">
-        <img class="avatar" src="./public/img/avatar.png" alt="user avatar image" />
-      </div>
-    </header>
-
-    <section class="main">
+  <body>
+    <section class="todoapp">
       <header class="header">
-        <div class="button-wrapper">
-          <button title="Clear completed" class="clear-completed active">
-            <i class="fa-solid fa-eye-slash"></i>
-            Clear completed
-          </button>
-
-          <!-- Popover Element -->
-          <button title="Filters" class="filters-button active">
-            <i class="fa-solid fa-filter"></i>
-          </button>
-
-          <ul class="filters-list">
-            <li>
-              <button class="active">All</button>
-            </li>
-            <li>
-              <button>Active</button>
-            </li>
-            <li>
-              <button>Completed</button>
-            </li>
-          </ul>
+        <div class="title-wrapper">
+          <h1 class="title">to do list</h1>
+          <p class="text">Stop Procrastinating Today!</p>
         </div>
 
-        <span class="counter">3 items left</span>
+        <div class="avatar-wrapper">
+          <img
+            class="avatar"
+            src="./public/img/avatar.png"
+            alt="user avatar image"
+          />
+        </div>
       </header>
 
-      <ul class="todo-list">
-        <li>
-          <label>
-            <input type="checkbox" name="todo" class="toggle" />
-            <span class="fake"></span>
-            <span class="todo-text">Make this checkbox beautiful</span>
-            <button class="destroy">
-              <i class="fa-solid fa-xmark"></i>
+      <section class="main">
+        <header class="header">
+          <div class="button-wrapper">
+            <button title="Clear completed" class="clear-completed active">
+              <i class="fa-solid fa-eye-slash"></i>
+              Clear completed
             </button>
-            <button class="edit">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" name="todo" class="toggle" />
-            <span class="fake"></span>
-            <span class="todo-text">Make this cool</span>
-            <button class="destroy">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button class="edit">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" name="todo" class="toggle" />
-            <span class="fake"></span>
-            <span class="todo-text">Make checkbox beautiful</span>
-            <button class="destroy">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button class="edit">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" name="todo" class="toggle" />
-            <span class="fake"></span>
-            <span class="todo-text">Make this checkbox beautiful and cool</span>
-            <button class="destroy">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button class="edit">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" name="todo" class="toggle" />
-            <span class="fake"></span>
-            <span class="todo-text">Make this checkbox beautiful</span>
-            <button class="destroy">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button class="edit">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" name="todo" class="toggle" />
-            <span class="fake"></span>
-            <span class="todo-text">Make this checkbox beautiful and cool</span>
-            <button class="destroy">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button class="edit">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" name="todo" class="toggle" />
-            <span class="fake"></span>
-            <span class="todo-text">This checkbox beautiful</span>
-            <button class="destroy">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button class="edit">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="checkbox" name="todo" class="toggle" />
-            <span class="fake"></span>
-            <span class="todo-text">checkbox beautiful</span>
-            <button class="destroy">
-              <i class="fa-solid fa-xmark"></i>
-            </button>
-            <button class="edit">
-              <i class="fa-solid fa-pen"></i>
-            </button>
-          </label>
-        </li>
-      </ul>
 
-      <!-- <input type="text" class="new-todo" /> -->
+            <!-- Popover Element -->
+            <button title="Filters" class="filters-button active">
+              <i class="fa-solid fa-filter"></i>
+            </button>
+
+            <ul class="filters-list">
+              <li>
+                <button class="active">All</button>
+              </li>
+              <li>
+                <button>Active</button>
+              </li>
+              <li>
+                <button>Completed</button>
+              </li>
+            </ul>
+          </div>
+
+          <span class="counter">3 items left</span>
+        </header>
+
+        <ul class="todo-list">
+          <li>
+            <label>
+              <input type="checkbox" name="todo" class="toggle" />
+              <span class="fake"></span>
+              <span class="todo-text"
+                >Lorem ipsum, dolor consectetur adipisicing elit.</span
+              >
+              <input
+                type="text"
+                class="edit"
+                value="Lorem ipsum, dolor consectetur adipisicing elit."
+              />
+              <button class="button-destroy">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="button-edit active">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="todo" class="toggle" />
+              <span class="fake"></span>
+              <span class="todo-text"
+                >Lorem ipsum, sit amet consectetur adipisicing elit.</span
+              >
+              <button class="button-destroy">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="button-edit">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="todo" class="toggle" />
+              <span class="fake"></span>
+              <span class="todo-text"
+                >Lorem ipsum, dolor sit consectetur adipisicing elit.</span
+              >
+              <button class="button-destroy">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="button-edit">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="todo" class="toggle" />
+              <span class="fake"></span>
+              <span class="todo-text"
+                >Lorem ipsum, dolor sit amet adipisicing elit.</span
+              >
+              <button class="button-destroy">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="button-edit">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="todo" class="toggle" />
+              <span class="fake"></span>
+              <span class="todo-text"
+                >Lorem ipsum, dolor sit amet consectetur elit.</span
+              >
+              <button class="button-destroy">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="button-edit">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="todo" class="toggle" />
+              <span class="fake"></span>
+              <span class="todo-text"
+                >Lorem ipsum, dolor sit amet consectetur adipisicing.</span
+              >
+              <button class="button-destroy">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="button-edit">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="todo" class="toggle" />
+              <span class="fake"></span>
+              <span class="todo-text"
+                >Lorem dolor sit amet consectetur adipisicing elit.</span
+              >
+              <button class="button-destroy">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="button-edit">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" name="todo" class="toggle" />
+              <span class="fake"></span>
+              <span class="todo-text"
+                >Lorem ipsum, amet consectetur adipisicing elit.</span
+              >
+              <button class="button-destroy">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+              <button class="button-edit">
+                <i class="fa-solid fa-pen"></i>
+              </button>
+            </label>
+          </li>
+        </ul>
+
+        <input type="text" class="new-todo" placeholder="New Todo" />
+      </section>
     </section>
-  </section>
 
-  <script type="module" src="./index.js"></script>
-</body>
-
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
