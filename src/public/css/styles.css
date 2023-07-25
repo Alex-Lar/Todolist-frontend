@@ -376,53 +376,6 @@ button.active:active {
   background-color: #393c44b4;
 }
 
-.button-edit.active {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  position: absolute;
-  top: 50%;
-  right: -3rem;
-  color: #a073ffb7;
-  background-color: unset;
-
-  transform: translateY(-50%);
-}
-
-.button-edit.active:active {
-  background-color: var(--gray-1);
-}
-
-.edit {
-  position: absolute;
-  left: 1%;
-  z-index: 3;
-  color: var(--white-1);
-  background-color: var(--black-1);
-
-  outline: unset;
-  border: 2px solid transparent;
-  border-left: 2px solid #a073ffb7;
-
-  width: 95%;
-  font-size: 1.3rem;
-  padding: 1.3rem 1.2rem;
-  transition: all var(--transition-1);
-}
-
-.edit:hover {
-  background-color: var(--gray-2);
-}
-
-.todo-list li:hover .edit {
-  background-color: var(--gray-2);
-}
-
-.edit:focus {
-  border: 2px solid #a073ffb7;
-}
-
 /* New Todo */
 
 .new-todo {
@@ -511,5 +464,52 @@ button.active:active {
 
   .todo-list li label {
     padding: 1.5rem;
+  }
+
+  .button-edit.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    top: 50%;
+    right: -3rem;
+    color: #a073ffb7;
+    background-color: unset;
+
+    transform: translateY(-50%);
+  }
+
+  .button-edit.active:active {
+    background-color: var(--gray-1);
+  }
+
+  .edit {
+    position: absolute;
+    left: 1%;
+    z-index: 3;
+    color: var(--white-1);
+    background-color: var(--black-1);
+
+    outline: unset;
+    border: 2px solid transparent;
+    border-left: 2px solid #a073ffb7;
+
+    width: 95%;
+    font-size: 1.3rem;
+    padding: 1.3rem 1.2rem;
+    transition: all var(--transition-1);
+  }
+
+  .edit:hover {
+    background-color: var(--gray-2);
+  }
+
+  .todo-list li:hover .edit {
+    background-color: var(--gray-2);
+  }
+
+  .edit:focus {
+    border: 2px solid #a073ffb7;
   }
 }

@@ -1,17 +1,17 @@
-const filtersBtn = document.querySelector('.filters-button');
-const filtersList = document.querySelector('.filters-list');
+const filtersBtn = document.querySelector(".filters-button");
+const filtersList = document.querySelector(".filters-list");
 
 const toggleShowClass = () => {
   window.requestAnimationFrame(() => {
-    filtersList.classList.toggle('show');
+    filtersList.classList.toggle("show");
   });
 };
 
-filtersBtn.addEventListener('click', toggleShowClass);
+filtersBtn.addEventListener("click", toggleShowClass);
 
-window.addEventListener('click', (e) => {
+window.addEventListener("click", (e) => {
   window.requestAnimationFrame(() => {
-    if (filtersList.classList.contains('show')) {
+    if (filtersList.classList.contains("show")) {
       console.log(e);
     }
   });
