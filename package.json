@@ -1,14 +1,17 @@
 {
-  "name": "todo-list",
+  "name": "frontend",
   "version": "1.0.0",
+  "description": "Frontend for Todolist project",
   "main": "./src/index.js",
-  "license": "MIT",
   "scripts": {
-    "start": "yarn run prettier-format && yarn run lint && yarn run serve",
+    "start": "npm run prettier-format && npm run lint && npm run serve",
     "serve": "lite-server",
     "lint": "eslint .",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write"
   },
+  "keywords": [],
+  "author": "Alexander Larin",
+  "license": "ISC",
   "devDependencies": {
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
