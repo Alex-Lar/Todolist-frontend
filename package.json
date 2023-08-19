@@ -1,7 +1,7 @@
 {
-  "name": "frontend",
+  "name": "todolist-client",
   "version": "1.0.0",
-  "description": "Frontend for Todolist project",
+  "description": "Client for Todolist application",
   "main": "./src/index.js",
   "scripts": {
     "start": "npm run prettier-format && npm run lint && npm run serve",
