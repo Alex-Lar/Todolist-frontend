@@ -7,7 +7,8 @@
     "build": "webpack",
     "start": "webpack serve",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "Alexander Larin",
@@ -21,6 +22,7 @@
     "eslint-plugin-prettier": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
+    "husky": "^8.0.0",
     "mini-css-extract-plugin": "^2.7.6",
     "prettier": "^3.0.2",
     "style-loader": "^3.3.3",
