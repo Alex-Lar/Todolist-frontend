@@ -4,8 +4,8 @@
   "description": "Frontend for Todolist application",
   "main": "./src/index.js",
   "scripts": {
-    "start": "npm run prettier-format && npm run lint && npm run serve",
-    "serve": "lite-server",
+    "build": "webpack",
+    "start": "webpack serve",
     "lint": "eslint .",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write"
   },
@@ -15,9 +15,14 @@
   "devDependencies": {
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
-    "prettier": "^2.8.8"
-  },
-  "dependencies": {
-    "lite-server": "^2.6.1"
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "prettier": "^2.8.8",
+    "terser-webpack-plugin": "^5.3.9",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
