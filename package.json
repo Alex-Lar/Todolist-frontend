@@ -6,16 +6,17 @@
   "scripts": {
     "build": "webpack",
     "start": "webpack serve",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .ts",
     "prettier-format": "prettier --config .prettierrc 'src/**/*.js' --write"
   },
   "keywords": [],
   "author": "Alexander Larin",
   "license": "ISC",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "@typescript-eslint/parser": "^6.4.0",
     "css-loader": "^6.8.1",
-    "eslint": "^8.42.0",
-    "eslint-config-prettier": "^8.8.0",
+    "eslint": "^8.47.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "mini-css-extract-plugin": "^2.7.6",
